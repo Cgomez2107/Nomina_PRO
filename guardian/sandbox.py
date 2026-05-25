@@ -5,7 +5,7 @@ from pathlib import Path
 
 def ejecutar_en_sandbox():
     result = subprocess.run(
-        ["docker", "run", "--rm", "-v", "./:/app", "-w", "/app",
+        ["docker", "run", "--rm", "-v", f"{Path.cwd().resolve()}:/app", "-w", "/app",
          "guardian-sandbox", "pytest", "--json-report"],
         capture_output=True, text=True
     )
