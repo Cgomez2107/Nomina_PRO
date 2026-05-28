@@ -12,7 +12,7 @@ Basado en COIL (UdeC × UMB), 100% open source.
 ## Stack
 
 - Python 3.11+
-- Ollama + Llama 3 (8B)
+- Ollama + Llama 3
 - LangChain
 - Pytest
 - Docker
